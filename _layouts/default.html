@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
+  <head>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      "HTML-CSS": {
+        linebreaks: { automatic: true }
+      }
+    });
+  </script>
+</head>
   <body>
     <nav>{% include nav.html %}</nav>
     <div class="wrapper">
       <main>{{ content }}</main>
       <footer>{% include footer.html %}</footer>
     </div>
-
+    
     {% include link-previews.html wrapperQuerySelector="content" %}
   </body>
 </html>
