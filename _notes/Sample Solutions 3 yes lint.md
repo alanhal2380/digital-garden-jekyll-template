@@ -1,6 +1,6 @@
 ---
 title: Sample Solutions 3 yes lint 
-katex: true
+usemathjax: true
 ---
 
 title: Sample Solutions 3 yes lint

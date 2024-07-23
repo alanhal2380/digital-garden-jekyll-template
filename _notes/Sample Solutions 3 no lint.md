@@ -1,6 +1,6 @@
 ---
 title: Sample Solutions 3 no lint
-katex: true
+usemathjax: true
 ---
 ## Parallelogram identity
 1. && Compute $\mathbf{u} - \mathbf{v}$ and $\mathbf{u} + \mathbf{v}$ using the rules of vector addition  %% fold %% 

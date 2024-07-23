@@ -41,5 +41,6 @@ defaults:
       path: "_notes/**/*.md"
     values:
       layout: "note"
-kramdown:
-  math_engine: katex
+
+  # Build settings
+  markdown: kramdown
