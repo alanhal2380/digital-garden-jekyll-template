@@ -16,6 +16,8 @@ open_external_links_in_new_tab: true
 # Note that doing so will negatively the reader's privacy
 # as their browser will communicate with Twitter's servers.
 embed_tweets: false
+# Build settings
+markdown: kramdown
 
 permalink:           pretty
 relative_permalinks: false
@@ -41,6 +43,4 @@ defaults:
       path: "_notes/**/*.md"
     values:
       layout: "note"
-
-  # Build settings
-  markdown: kramdown
+      

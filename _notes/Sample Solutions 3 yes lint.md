@@ -1,5 +1,5 @@
 ---
-title: Sample Solutions 3 yes lint 
+title: Sample Solutions 3 yes lint
 usemathjax: true
 ---
 
