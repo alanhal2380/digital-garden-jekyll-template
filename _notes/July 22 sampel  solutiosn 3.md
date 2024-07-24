@@ -7,22 +7,22 @@ test
 ## Parallelogram identity
 1. && Compute $\mathbf{u} - \mathbf{v}$ and $\mathbf{u} + \mathbf{v}$ using the rules of vector addition  %% fold %% 
     - Componentwise addition, subtraction: $$\begin{align*}\mathbf{u} - \mathbf{v} &= \left(\begin{smallmatrix}4 \\ 0 \\ 3\end{smallmatrix}\right) - \left(\begin{smallmatrix}-2 \\ 1 \\ 5\end{smallmatrix}\right) = \left(\begin{smallmatrix}6 \\ -1 \\ -2\end{smallmatrix}\right)\\\\ \mathbf{u} + \mathbf{v} &= \left(\begin{smallmatrix}4 \\ 0 \\ 3\end{smallmatrix}\right) + \left(\begin{smallmatrix}-2 \\ 1 \\ 5\end{smallmatrix}\right) = \left(\begin{smallmatrix}2 \\ 1 \\ 8\end{smallmatrix}\right)\end{align*}$$
-2. && Compute norms using $$|\mathbf{v}| = \sqrt{\mathbf{v} \cdot \mathbf{v}}$$ %% fold %% 
-    - Plug in data: $$\begin{align*}|\mathbf{u}| &= \sqrt{4^2 + 0^2 + 3^2} = 5\\ |\mathbf{v}| &= \sqrt{(-2)^2 + 1^2 + 5^2} = \sqrt{30}\\ |\mathbf{u} - \mathbf{v}| &= \sqrt{6^2 + (-1)^2 + (-2)^2} = \sqrt{41}\\ |\mathbf{u} + \mathbf{v}| &= \sqrt{2^2 + 1^2 + 8^2} = \sqrt{69}\end{align*}$$
-3. && Verify $|\mathbf{u} + \mathbf{v}|^2 + |\mathbf{u} - \mathbf{v}|^2 = 2|\mathbf{u}|^2 + 2|\mathbf{v}|^2$ %% fold %% 
-    - Plug in data: $$\begin{align*}|\mathbf{u} + \mathbf{v}|^2 + |\mathbf{u} - \mathbf{v}|^2 &= (\sqrt{69})^2 + (\sqrt{41})^2 = 110\\\\ 2|\mathbf{u}|^2 + 2|\mathbf{v}|^2 &= 2(5^2) + 2(\sqrt{30})^2 = 2(25) + 2(30) = 110\end{align*}$$
+2. && Compute norms using $$\mathbf{v} = \sqrt{\mathbf{v} \cdot \mathbf{v}}$$ %% fold %% 
+    - Plug in data: $$\begin{align*}\mathbf{u} &= \sqrt{4^2 + 0^2 + 3^2} = 5\\ \mathbf{v} &= \sqrt{(-2)^2 + 1^2 + 5^2} = \sqrt{30}\\ \mathbf{u} - \mathbf{v} &= \sqrt{6^2 + (-1)^2 + (-2)^2} = \sqrt{41}\\ \mathbf{u} + \mathbf{v} &= \sqrt{2^2 + 1^2 + 8^2} = \sqrt{69}\end{align*}$$
+3. && Verify $\mathbf{u} + \mathbf{v}^2 + \mathbf{u} - \mathbf{v}^2 = 2\mathbf{u}^2 + 2\mathbf{v}^2$ %% fold %% 
+    - Plug in data: $$\begin{align*}\mathbf{u} + \mathbf{v}^2 + \mathbf{u} - \mathbf{v}^2 &= (\sqrt{69})^2 + (\sqrt{41})^2 = 110\\\\ 2\mathbf{u}^2 + 2\mathbf{v}^2 &= 2(5^2) + 2(\sqrt{30})^2 = 2(25) + 2(30) = 110\end{align*}$$
     - Substitute on both sides to verify equality.
 
 ## Angle between some vectors
-1. && Obtain formula $\theta = \cos^{-1}\left(\frac{\mathbf{u} \cdot \mathbf{v}}{|\mathbf{u}| |\mathbf{v}|}\right)$ %% fold %% 
-    - !! Cosine Angle Rule: $\mathbf{x} \cdot \mathbf{y} = |\mathbf{x}| |\mathbf{y}| \cos(\theta)$
-    - Rearrange cosine angle rule: $$\mathbf{u} \cdot \mathbf{v} = |\mathbf{u}| |\mathbf{v}| \cos(\theta) \qquad ⨠⨠ \qquad \cos(\theta) = \frac{\mathbf{u} \cdot \mathbf{v}}{|\mathbf{u}| |\mathbf{v}|} \qquad ⨠⨠ \qquad \theta = \cos^{-1}\left(\frac{\mathbf{u} \cdot \mathbf{v}}{|\mathbf{u}| |\mathbf{v}|}\right)$$
+1. && Obtain formula $\theta = \cos^{-1}\left(\frac{\mathbf{u} \cdot \mathbf{v}}{\mathbf{u} \mathbf{v}}\right)$ %% fold %% 
+    - !! Cosine Angle Rule: $\mathbf{x} \cdot \mathbf{y} = \mathbf{x} \mathbf{y} \cos(\theta)$
+    - Rearrange cosine angle rule: $$\mathbf{u} \cdot \mathbf{v} = \mathbf{u} \mathbf{v} \cos(\theta) \qquad ⨠⨠ \qquad \cos(\theta) = \frac{\mathbf{u} \cdot \mathbf{v}}{\mathbf{u} \mathbf{v}} \qquad ⨠⨠ \qquad \theta = \cos^{-1}\left(\frac{\mathbf{u} \cdot \mathbf{v}}{\mathbf{u} \mathbf{v}}\right)$$
 3. && Compute $\theta\approx 0.705\text{ rad}$ %% fold %% 
-    - Plug in data: $$\begin{align*}\cos(\theta) &= \frac{(3, 6, 2) \cdot (4, 2, 4)}{|(3, 6, 2)| |(4, 2, 4)|}\\\\ \theta &= \cos^{-1}\left(\frac{32}{42}\right) \approx 0.705\text{ rad}\end{align*}$$
+    - Plug in data: $$\begin{align*}\cos(\theta) &= \frac{(3, 6, 2) \cdot (4, 2, 4)}{(3, 6, 2) (4, 2, 4)}\\\\ \theta &= \cos^{-1}\left(\frac{32}{42}\right) \approx 0.705\text{ rad}\end{align*}$$
 
 ## Acute, orthogonal, or obtuse?
 1. &&& Sign of the dot product determines quality of the angle %% fold %% 
-    - !! Cosine Angle Rule: $\mathbf{x} \cdot \mathbf{y} = |\mathbf{x}| |\mathbf{y}| \cos(\theta)$ %% fold %%
+    - !! Cosine Angle Rule: $\mathbf{x} \cdot \mathbf{y} = \mathbf{x} \mathbf{y} \cos(\theta)$ %% fold %%
     - && Dot product signs ↔ Angle quality
         1. $\mathbf{x} \cdot \mathbf{y}>0$, angle between $\mathbf{u}$ and $\mathbf{v}$ is obtuse
         1. $\mathbf{x} \cdot \mathbf{y}<0$, angle between $\mathbf{u}$ and $\mathbf{w}$ is acute
@@ -49,10 +49,11 @@ test
     - (Notice: $\mathbf{n}_1$ is parallel to $\mathbf{n}_2$. Because the planes are parallel.)
 4. !! The distance from $\mathbf{P}_1$ to $\mathbf{P}_2$ equals the scalar projection of $\mathbf{b}$ onto either plane’s normal vector. %% fold %%
 5. && Choose $\mathbf{n}_1$ and compute the scalar projection of $\mathbf{b}$ onto $\mathbf{n}_1$. %% fold %% 
-    - Computing for $\mathbf{n}_1$: $$\frac{\mathbf{b} \cdot \mathbf{n}_1}{|\mathbf{n}_1|} = \frac{(\frac{-1}{15} , 0, 0) \cdot (15,3,-3)}{|(15,3,-3)|} = \frac{-1}{\sqrt{243}} = -\frac{1}{9\sqrt{3}}$$
+    - Computing for $\mathbf{n}_1$: $$\frac{\mathbf{b} \cdot \mathbf{n}_1}{\mathbf{n}_1} = \frac{(\frac{-1}{15} , 0, 0) \cdot (15,3,-3)}{(15,3,-3)} = \frac{-1}{\sqrt{243}} = -\frac{1}{9\sqrt{3}}$$
     - (Same result for $\mathbf{n}_2$ but harder arithmetic.)
 6. & Answer $=$ $\frac{1}{9\sqrt{3}}$. %% fold %% 
-    - $$\text{Distance between planes} = \left| -\frac{1}{9\sqrt{3}}\right| = \frac{1}{9\sqrt{3}}$$
+    -  
+    $$ = \left -\frac{1}{9\sqrt{3}}\right = \frac{1}{9\sqrt{3}}$$
 
 
 ## Line of intersection between planes
@@ -73,11 +74,11 @@ test
     - The angle between the planes can be rotated to align with the angle between their normal vectors. \[Insert diagram here.]
 6. && Find the normal vectors, $\mathbf{n}_1$ to $\mathbf{P}_1$ and $\mathbf{n}_2$ to $\mathbf{P}_2$. %% fold %% 
     - Read off the coefficients: $$\begin{align*}\mathbf{P}_1 &:\;\, 6x - 3y + z - 5 = 0 \qquad &⨠⨠ \qquad \mathbf{n}_1 = \begin{pmatrix} 6 \\ -3 \\ 1 \end{pmatrix}\\ \mathbf{P}_2 &:\;\, -x + y + 5z - 5 = 0 \qquad &⨠⨠ \qquad \mathbf{n}_2 = \begin{pmatrix} -1 \\ 1 \\ 5 \end{pmatrix}\end{align*}$$
-7. !! Cosine Angle Rule: $\mathbf{n}_1 \cdot \mathbf{n}_2 = |\mathbf{n}_1| |\mathbf{n}_2| \cos(\theta)$. %% fold %% 
-    - Rearrange: $$\cos(\theta) = \frac{\mathbf{n}_1 \cdot \mathbf{n}_2}{|\mathbf{n}_1| |\mathbf{n}_2|}$$
+7. !! Cosine Angle Rule: $\mathbf{n}_1 \cdot \mathbf{n}_2 = \mathbf{n}_1 \mathbf{n}_2 \cos(\theta)$. %% fold %% 
+    - Rearrange: $$\cos(\theta) = \frac{\mathbf{n}_1 \cdot \mathbf{n}_2}{\mathbf{n}_1 \mathbf{n}_2}$$
 8. && Compute that $\theta\approx 96.52^\circ$. %% fold %% 
     - Compute the dot product: $$\mathbf{n}_1 \cdot \mathbf{n}_2 = (6)(-1) + (-3 )(1) + (1)(5) = -6 - 3 + 5 = -4$$
-    - Compute the norms: $$\begin{align*}|\mathbf{n}_1| &= \sqrt{6^2 + (-3)^2 + 1^2} = \sqrt{46}\\ |\mathbf{n}_2| &= \sqrt{(-1)^2 + 1^2 + 5^2} = \sqrt{27}\end{align*}$$
+    - Compute the norms: $$\begin{align*}\mathbf{n}_1 &= \sqrt{6^2 + (-3)^2 + 1^2} = \sqrt{46}\\ \mathbf{n}_2 &= \sqrt{(-1)^2 + 1^2 + 5^2} = \sqrt{27}\end{align*}$$
     - Compute the cosine using (7): $$\cos(\theta) = \frac{-4}{\sqrt{(46)(27)}} = -\frac{4}{\sqrt{1242}}$$
     - Compute the angle, the answer: $$\theta = \cos^{-1}\left(\frac{-4}{\sqrt{1242}}\right) \approx 96.52^\circ$$
     - This angle is obtuse, which is consistent with a negative dot product $-4<0$.
@@ -157,4 +158,4 @@ $$\mathrm{proj}_{\mathbf{l}}(\mathbf{p} - \mathbf{r}_0) = \frac{15}{17} \mathbf{
 \end{pmatrix}$$
 
 The final step is to find the distance between $\mathbf{p}$ and $\mathrm{proj}_{\mathbf{l}}(\mathbf{p} - \mathbf{r}_{0})+ \mathbf{r_0}$ 
-Add the projection vector to $\mathbf{r}_0$ to find the point on the line closest to $\mathbf{p}$: $$\mathrm{proj}_{\mathbf{l}}(\mathbf{p} - \mathbf{r}_0) + \mathbf{r}_0 = \begin{pmatrix} \frac{60}{17} \\ 0 \\ -\frac{15}{17} \end{pmatrix} + \begin{pmatrix} -2 \\ 3 \\ 1 \end{pmatrix} = \begin{pmatrix} \frac{26}{17} \\ 3 \\ \frac{2}{17} \end{pmatrix}$$ Now, find the vector from $\mathbf{p}$ to this point: $$\mathbf{p} - \left(\mathrm{proj}_{\mathbf{l}}(\mathbf{p} - \mathbf{r}_0) + \mathbf{r}_0\right) = \begin{pmatrix} 1 \\ 5 \\ -2 \end{pmatrix} - \begin{pmatrix} \frac{26}{17} \\ 3 \\ \frac{2}{17} \end{pmatrix} = \begin{pmatrix} \frac{-9}{17} \\ 2 \\ -\frac{36}{17} \end{pmatrix}$$ Finally, find the magnitude of this vector to get the distance: $$|\mathbf{p} - \left(\mathrm{proj}_{\mathbf{l}}(\mathbf{p} - \mathbf{r}_0) + \mathbf{r}_0\right)| = \sqrt{\left( \frac{-9}{17} \right)^2 + 2^2 + \left( -\frac{36}{17} \right)^2} = \sqrt{\frac{149}{17}}$$
+Add the projection vector to $\mathbf{r}_0$ to find the point on the line closest to $\mathbf{p}$: $$\mathrm{proj}_{\mathbf{l}}(\mathbf{p} - \mathbf{r}_0) + \mathbf{r}_0 = \begin{pmatrix} \frac{60}{17} \\ 0 \\ -\frac{15}{17} \end{pmatrix} + \begin{pmatrix} -2 \\ 3 \\ 1 \end{pmatrix} = \begin{pmatrix} \frac{26}{17} \\ 3 \\ \frac{2}{17} \end{pmatrix}$$ Now, find the vector from $\mathbf{p}$ to this point: $$\mathbf{p} - \left(\mathrm{proj}_{\mathbf{l}}(\mathbf{p} - \mathbf{r}_0) + \mathbf{r}_0\right) = \begin{pmatrix} 1 \\ 5 \\ -2 \end{pmatrix} - \begin{pmatrix} \frac{26}{17} \\ 3 \\ \frac{2}{17} \end{pmatrix} = \begin{pmatrix} \frac{-9}{17} \\ 2 \\ -\frac{36}{17} \end{pmatrix}$$ Finally, find the magnitude of this vector to get the distance: $$\mathbf{p} - \left(\mathrm{proj}_{\mathbf{l}}(\mathbf{p} - \mathbf{r}_0) + \mathbf{r}_0\right) = \sqrt{\left( \frac{-9}{17} \right)^2 + 2^2 + \left( -\frac{36}{17} \right)^2} = \sqrt{\frac{149}{17}}$$
