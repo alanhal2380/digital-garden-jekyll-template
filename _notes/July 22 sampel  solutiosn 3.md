@@ -4,22 +4,30 @@ usemathjax: true
 links: "[[Sample Solutions 3 yes lint]]"
 ---
 
-test
+test test 2
 ## Parallelogram identity
 1. && Compute $\mathbf{u} - \mathbf{v}$ and $\mathbf{u} + \mathbf{v}$ using the rules of vector addition  %% fold %% 
     - Componentwise addition, subtraction: $$\begin{align*}\mathbf{u} - \mathbf{v} &= \left(\begin{smallmatrix}4 \\ 0 \\ 3\end{smallmatrix}\right) - \left(\begin{smallmatrix}-2 \\ 1 \\ 5\end{smallmatrix}\right) = \left(\begin{smallmatrix}6 \\ -1 \\ -2\end{smallmatrix}\right)\\\\ \mathbf{u} + \mathbf{v} &= \left(\begin{smallmatrix}4 \\ 0 \\ 3\end{smallmatrix}\right) + \left(\begin{smallmatrix}-2 \\ 1 \\ 5\end{smallmatrix}\right) = \left(\begin{smallmatrix}2 \\ 1 \\ 8\end{smallmatrix}\right)\end{align*}$$
 2. && Compute norms using $$\mathbf{v} = \sqrt{\mathbf{v} \cdot \mathbf{v}}$$ %% fold %% 
     - Plug in data: $$\begin{align*}\mathbf{u} &= \sqrt{4^2 + 0^2 + 3^2} = 5\\ \mathbf{v} &= \sqrt{(-2)^2 + 1^2 + 5^2} = \sqrt{30}\\ \mathbf{u} - \mathbf{v} &= \sqrt{6^2 + (-1)^2 + (-2)^2} = \sqrt{41}\\ \mathbf{u} + \mathbf{v} &= \sqrt{2^2 + 1^2 + 8^2} = \sqrt{69}\end{align*}$$
 3. && Verify $\mathbf{u} + \mathbf{v}^2 + \mathbf{u} - \mathbf{v}^2 = 2\mathbf{u}^2 + 2\mathbf{v}^2$ %% fold %% 
-    - Plug in data: $$\begin{align*}\mathbf{u} + \mathbf{v}^2 + \mathbf{u} - \mathbf{v}^2 &= (\sqrt{69})^2 + (\sqrt{41})^2 = 110\\\\ 2\mathbf{u}^2 + 2\mathbf{v}^2 &= 2(5^2) + 2(\sqrt{30})^2 = 2(25) + 2(30) = 110\end{align*}$$
+    - Plug in data: $$
+		\begin{align*}\mathbf{u} + \mathbf{v}^2 + \mathbf{u} - \mathbf{v}^2 &= (\sqrt{69})^2 + (\sqrt{41})^2 = 110\\\\ 2\mathbf{u}^2 + 2\mathbf{v}^2 &= 2(5^2) + 2(\sqrt{30})^2 = 2(25) + 2(30) = 110\end{align*}
+		$$
+
+    $$\begin{align*}\mathbf{u} + \mathbf{v}^2 + \mathbf{u} - \mathbf{v}^2 &= (\sqrt{69})^2 + (\sqrt{41})^2 = 110\\\\ 2\mathbf{u}^2 + 2\mathbf{v}^2 &= 2(5^2) + 2(\sqrt{30})^2 = 2(25) + 2(30) = 110\end{align*}$$
     - Substitute on both sides to verify equality.
+
+$$
+		\begin{align*}\mathbf{u} + \mathbf{v}^2 + \mathbf{u} - \mathbf{v}^2 &= (\sqrt{69})^2 + (\sqrt{41})^2 = 110\\\\ 2\mathbf{u}^2 + 2\mathbf{v}^2 &= 2(5^2) + 2(\sqrt{30})^2 = 2(25) + 2(30) = 110\end{align*}
+		$$
 
 ## Angle between some vectors
 1. && Obtain formula $\theta = \cos^{-1}\left(\frac{\mathbf{u} \cdot \mathbf{v}}{\mathbf{u} \mathbf{v}}\right)$ %% fold %% 
     - !! Cosine Angle Rule: $\mathbf{x} \cdot \mathbf{y} = \mathbf{x} \mathbf{y} \cos(\theta)$
     - Rearrange cosine angle rule: $$\mathbf{u} \cdot \mathbf{v} = \mathbf{u} \mathbf{v} \cos(\theta) \qquad ⨠⨠ \qquad \cos(\theta) = \frac{\mathbf{u} \cdot \mathbf{v}}{\mathbf{u} \mathbf{v}} \qquad ⨠⨠ \qquad \theta = \cos^{-1}\left(\frac{\mathbf{u} \cdot \mathbf{v}}{\mathbf{u} \mathbf{v}}\right)$$
 3. && Compute $\theta\approx 0.705\text{ rad}$ %% fold %% 
-    - Plug in data: $$\begin{align*}\cos(\theta) &= \frac{(3, 6, 2) \cdot (4, 2, 4)}{(3, 6, 2) (4, 2, 4)}\\\\ \theta &= \cos^{-1}\left(\frac{32}{42}\right) \approx 0.705\text{ rad}\end{align*}$$
+    - Plug in data: $$ \begin{align*}\cos(\theta) &= \frac{(3, 6, 2) \cdot (4, 2, 4)}{(3, 6, 2) (4, 2, 4)}\\\\ \theta &= \cos^{-1}\left(\frac{32}{42}\right) \approx 0.705\text{ rad}\end{align*}$$
 
 ## Acute, orthogonal, or obtuse?
 1. &&& Sign of the dot product determines quality of the angle %% fold %% 
